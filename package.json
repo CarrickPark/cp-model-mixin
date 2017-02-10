@@ -1,0 +1,24 @@
+{
+  "name": "cp-model-mixin",
+  "version": "1.0.0",
+  "description": "Carrick Park model mixin",
+  "main": "mixin.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarrickPark/cp-model-mixin.git"
+  },
+  "keywords": [
+    "carrick",
+    "park",
+    "model",
+    "mixin"
+  ],
+  "author": "Carrick Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarrickPark/cp-model-mixin/issues"
+  },
+  "homepage": "https://github.com/CarrickPark/cp-model-mixin#readme"
+}

@@ -2,7 +2,7 @@
   "name": "cp-model-mixin",
   "version": "1.0.0",
   "description": "Carrick Park model mixin",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
   },
   "repository": {

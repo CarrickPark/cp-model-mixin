@@ -2,12 +2,12 @@
   "name": "cp-model-mixin",
   "version": "1.0.0",
   "description": "Carrick Park model mixin",
-  "main": "mixin.js",
+  "main": "lib/index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CarrickPark/cp-model-mixin.git"
+    "url": "`git+https://github.com/CarrickPark/cp-model-mixin.git`"
   },
   "keywords": [
     "carrick",

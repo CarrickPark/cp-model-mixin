@@ -1,8 +1,16 @@
 language: node_js
 node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
-  - "4.4"
+- '6'
+- '6.1'
+- '5.11'
+- '4.4'
 after_success:
 - npm run coveralls
+notifications:
+  email:
+    recipients:
+    - buildmonitor@carrickpark.com
+    on_success: change
+    on_failure: always
+  slack:
+    secure: 7iI2U0kzwco3fLUaZLSBzH4YgjfaMKMI+T8DmenMci/gO1RaLOyACB/za1Rh0ayCXdqOcQAt0nr6l+D3d6GnskLiCYu2/EBBoC/XZLwBOdVyOWit8vpPL+iSJ0OVUEcdALK7YjYQO+MqbRaCKxCEt7vWJ7jG6AfF5YnvlvIM/m2zJvVJe+fCnJ2wQ+uygiiUwDetS9D/Jeq9MOfEygTU4CHU1v7Ec6Nd4Rtrar6CWOYHEC9OlRZbSqKsWOTWByql8V+JFEeonVmlrdkFJvWr0RAnEOQLwhOc2oFceryZbV+11h2Prg5Yw8HjEAnDKJERp0Ia/z71qMz53dsrqwnXEWLuzXjefSvjye+qx7rm0x4JXVg6mnmRdFe/lO3STZNrS9u5hPMm/s1J7fJYOYe2RTaHuAT3HicPk1bOpbJOeD6QlarqgcbO7GDDOXHqPamLN3g/wNja51yf0qbHfs2tpHzpArAUvZgj/w1smREZVF0AfGDOIjbc1klBpmEimzG01Rrmy8qPM7NYlLL8klSTyV3L/BTlUYbTdtvnnb3S1AyuzwF8jh099nsZ2YdusCgOb1IvR4pPdAAVVZGEVgq+5R9Ui0Pcx9BHP6qiWQiosYa+isvfPnivPju8QVyS410VEOIowmgbn59YtEJCdRX4sVU2GVqfQ3dVH4yajycoVYY=

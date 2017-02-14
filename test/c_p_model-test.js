@@ -21,7 +21,7 @@ describe('Carrick Park model mixin', function () {
     var options = Model.createOptionsFromRemotingContext(ctx);
 
     expect(options.host).to.equal('testhost');
-    expect(options.token).to.equal('testtoken');
+    expect(options.accessToken).to.equal('testtoken');
   });
 
 });

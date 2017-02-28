@@ -2,8 +2,9 @@
   "name": "cp-model-mixin",
   "version": "1.0.0",
   "description": "Carrick Park model mixin",
-  "main": "src/c_p_model.js",
+  "main": "dist/main/cp-model.js",
   "scripts": {
+    "build": "grunt build",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -27,11 +28,16 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.16",
     "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
+    "grunt-ts": "^6.0.0-beta.11",
+    "load-grunt-config": "^0.19.2",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0",
     "nyc": "^10.1.2",
     "sinon": "^1.17.7",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "time-grunt": "^1.4.0",
+    "typescript": "^2.2.1"
   }
 }

@@ -1,7 +1,7 @@
 /*
  * Add the host to remoting options
  */
-module.exports = function(Model, options) {
+export function model(Model, options) {
   console.log("loaded CPModel")
     Model.createOptionsFromRemotingContext = function(ctx) {
       console.log(" ctx " + ctx.req.get('host'));

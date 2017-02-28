@@ -6,7 +6,7 @@ var sinonChai = require("sinon-chai");
 var expect = chai.expect;
 chai.use(sinonChai);
 
-var mixin = require('../src/c_p_model');
+var mixin = require('../src/cp-model');
 
 describe('Carrick Park model mixin', function () {
 

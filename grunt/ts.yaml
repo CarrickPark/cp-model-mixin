@@ -1,0 +1,4 @@
+default:
+    tsconfig: './tsconfig.json'
+test:
+    tsconfig: './tsconfig-test.json'

@@ -1,0 +1,7 @@
+default:
+    options:
+        configuration: './tslint.json'
+    files:
+        src:
+            - 'src/**/*.ts'
+        

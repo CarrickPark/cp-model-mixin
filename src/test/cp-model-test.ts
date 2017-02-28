@@ -1,24 +1,26 @@
 'use strict';
 
-var chai = require("chai");
-var sinon = require("sinon");
-var sinonChai = require("sinon-chai");
-var expect = chai.expect;
+import * as chai from 'chai';
+import * as sinon from 'sinon';
+import * as sinonChai from 'sinon-chai';
+
+const expect = chai.expect;
 chai.use(sinonChai);
 
-var mixin = require('../src/cp-model');
+import * as mixin from '../main/cp-model';
+
 
 describe('Carrick Park model mixin', function () {
 
   it('Should contain host name on create', function () {
-    var ctx = { req: { accessToken: "testtoken"} };
-    var Model = {};
+    const ctx = { req: { accessToken: 'testtoken', get: {} } };
+    const Model = {};
 
     ctx.req.get = sinon.stub().returns('testhost');
 
     mixin(Model);
 
-    var options = Model.createOptionsFromRemotingContext(ctx);
+    const options = Model.createOptionsFromRemotingContext(ctx);
 
     expect(options.host).to.equal('testhost');
     expect(options.accessToken).to.equal('testtoken');

@@ -1,7 +1,12 @@
 /*
  * Add the host to remoting options
  */
-export function model(Model: Model, options) {
+
+import * as loopback from 'loopback';
+
+export default CPModel;
+
+export function CPModel(Model: loopback.Model, options) {
   console.log('loaded CPModel');
     Model.createOptionsFromRemotingContext = function(ctx) {
       console.log(' ctx ' + ctx.req.get('host'));

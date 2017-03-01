@@ -7,14 +7,14 @@ import * as sinonChai from 'sinon-chai';
 const expect = chai.expect;
 chai.use(sinonChai);
 
-import * as mixin from '../main/cp-model';
-
+import * as loopback from 'loopback';
+import { CPModel as mixin } from '../src/cp-model';
 
 describe('Carrick Park model mixin', function () {
 
   it('Should contain host name on create', function () {
     const ctx = { req: { accessToken: 'testtoken', get: {} } };
-    const Model = {};
+    const Model = { createOptionsFromRemotingContext: function (ctx: any) {return null;}};
 
     ctx.req.get = sinon.stub().returns('testhost');
 

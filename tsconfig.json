@@ -6,14 +6,14 @@
         "lib": ["es6", "dom"],
         "module": "commonjs",
         "moduleResolution": "node",
-        "outDir": "dist",
+        "outDir": "dist/main",
         "sourceMap": true,
-        "mapRoot": "dist",
-        "rootDir": "src",
+        "mapRoot": "dist/main",
+        "rootDir": "src/main",
         "target": "es5"
     },
     "include": [
         "node_modules/@types/**/*.d.ts",
-        "src/**/*.ts"
+        "src/main/**/*.ts"
     ]
 }

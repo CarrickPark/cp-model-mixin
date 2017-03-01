@@ -6,8 +6,12 @@
     "lib": ["es6", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "test",
-    "rootDir": "test",
+    "outDir": "dist/test",
+    "rootDir": "src",
     "target": "es5"
-  }
+  },
+  "include": [
+      "node_modules/@types/**/*.d.ts",
+      "src/test/**/*.ts"
+  ]
 }

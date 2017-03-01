@@ -8,17 +8,17 @@ const expect = chai.expect;
 chai.use(sinonChai);
 
 import * as loopback from 'loopback';
-import { CPModel as mixin } from '../src/cp-model';
+import { CPModel as mixin } from '../main/cp-model';
 
 describe('Carrick Park model mixin', function () {
 
   it('Should contain host name on create', function () {
     const ctx = { req: { accessToken: 'testtoken', get: {} } };
-    const Model = { createOptionsFromRemotingContext: function (ctx: any) {return null;}};
+    const Model: loopback.Model = { createOptionsFromRemotingContext: function (ctxin: any) { return null; }};
 
     ctx.req.get = sinon.stub().returns('testhost');
 
-    mixin(Model);
+    mixin(Model, {});
 
     const options = Model.createOptionsFromRemotingContext(ctx);
 

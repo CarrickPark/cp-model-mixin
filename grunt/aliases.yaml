@@ -3,3 +3,7 @@ default: []
 build:
   - 'tslint'
   - 'ts:build'
+
+test:
+  - 'tslint'
+  - 'ts:test'

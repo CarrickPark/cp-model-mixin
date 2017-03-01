@@ -1,9 +1,14 @@
 default: []
 
 build:
-  - 'tslint'
-  - 'ts:build'
+    - 'clean:build'
+    - 'tslint'
+    - 'ts:build'
+    - 'clean:basedir'
+
 
 test:
-  - 'tslint'
-  - 'ts:test'
+    - 'clean:test'
+    - 'tslint'
+    - 'ts:test'
+    - 'clean:basedir'

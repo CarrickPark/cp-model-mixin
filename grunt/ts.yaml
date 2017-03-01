@@ -1,4 +1,4 @@
 build:
     tsconfig: './tsconfig.json'
 test:
-    tsconfig: './tsconfig-test.json'
+    tsconfig: './tsconfig.json'

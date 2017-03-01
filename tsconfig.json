@@ -11,5 +11,9 @@
     "mapRoot": "dist",
     "rootDir": "src",
     "target": "es5"
-  }
+  },
+    "include": [
+        "node_modules/@types/**/*",
+        "src/**/*"
+    ]
 }

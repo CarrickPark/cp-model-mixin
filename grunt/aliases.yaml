@@ -2,4 +2,4 @@ default: []
 
 build:
   - 'tslint'
-  - 'ts'
+  - 'ts:build'

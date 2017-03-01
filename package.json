@@ -6,7 +6,7 @@
   "scripts": {
     "build": "grunt build",
     "build_nosourcemaps": "grunt build_nosourcemaps",
-    "test": "nyc --reporter=html --reporter=text mocha",
+    "test": "nyc --reporter=html --reporter=text mocha dist/test",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {

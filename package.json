@@ -5,6 +5,7 @@
   "main": "dist/main/cp-model.js",
   "scripts": {
     "build": "grunt build",
+    "build_nosourcemaps": "grunt build_nosourcemaps",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },

@@ -6,7 +6,10 @@ build:
     - 'ts:build'
     - 'clean:basedir'
 
-
+build_nosourcemaps:
+    - 'build'
+    - 'clean:maps'
+    
 test:
     - 'clean:test'
     - 'tslint'

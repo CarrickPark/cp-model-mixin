@@ -15,4 +15,4 @@ test:
         # Optionally set to not fail on failed tests (will still fail on other errors)
         noFail: false
     src: 
-        - 'test/**/*.js'
+        - 'dist/test/**/*.js'

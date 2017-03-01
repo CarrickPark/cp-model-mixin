@@ -15,3 +15,11 @@ test:
     - 'tslint'
     - 'ts:test'
     - 'clean:basedir'
+    - 'mochaTest'
+
+cover:
+    - 'clean:test'
+    - 'tslint'
+    - 'ts:test'
+    - 'clean:basedir'
+    - 'mocha_istanbul'

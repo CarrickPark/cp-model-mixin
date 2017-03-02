@@ -8,7 +8,7 @@ const expect = chai.expect;
 chai.use(sinonChai);
 
 import * as loopback from 'loopback';
-import * as cp from '../main/cp-model';
+import CPModel = require('../main/cp-model');
 
 describe('Carrick Park model mixin', function () {
 
@@ -18,7 +18,7 @@ describe('Carrick Park model mixin', function () {
 
     ctx.req.get = sinon.stub().returns('testhost');
 
-    cp.mixins.CPModel(Model, {});
+    CPModel(Model, {});
     const options = Model.createOptionsFromRemotingContext(ctx);
 
     expect(options.host).to.equal('testhost');

@@ -1,1 +1,1 @@
-"use strict";var cp;!function(a){!function(a){function b(a,b){console.log("loaded CPModel"),a.createOptionsFromRemotingContext=function(a){return console.log(" ctx "+a.req.get("host")),{accessToken:a.req.accessToken,host:a.req.get("host")}}}a.CPModel=b}(a.mixins||(a.mixins={}))}(cp||(cp={})),module.exports=cp;
+"use strict";module.exports=function(a,b){console.log("loaded CPModel"),a.createOptionsFromRemotingContext=function(a){return console.log(" ctx "+a.req.get("host")),{accessToken:a.req.accessToken,host:a.req.get("host")}}};

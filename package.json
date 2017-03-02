@@ -2,10 +2,11 @@
   "name": "cp-model-mixin",
   "version": "1.0.0",
   "description": "Carrick Park model mixin",
-  "main": "dist/main/cp-model.js",
+  "main": "dist/main/cp-model.min.js",
   "scripts": {
     "build": "grunt build",
     "build_debug": "grunt build_debug",
+    "build_debug_js": "grunt build_debug_js",
     "test": "npm run build && nyc --reporter=html --reporter=text mocha dist/test/**/*.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "doc": "npm run build && grunt clean:doc && ./node_modules/.bin/typedoc --out doc ./src/main"
@@ -41,6 +42,7 @@
     "coveralls": "^2.11.16",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
     "grunt-mocha-istanbul": "^5.0.2",
     "grunt-mocha-test": "^0.13.2",
     "grunt-ts": "^6.0.0-beta.11",

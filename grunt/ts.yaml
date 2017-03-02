@@ -2,10 +2,12 @@ build:
     tsconfig: true
     options:
         verbose: true
+        comments: true
         sourceMap: false
         
 build_debug:
     tsconfig: true
     options:
         verbose: true
+        comments: true
         sourceMap: true

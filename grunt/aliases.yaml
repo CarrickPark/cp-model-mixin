@@ -17,6 +17,11 @@ build_debug:
     - 'ts:build_debug'
     - 'post_build'
 
+build_debug_js:
+    - 'clean:maps'
+    - 'ts:build'
+    - 'post_build'
+
 test:
     - 'build'
     - 'mochaTest'

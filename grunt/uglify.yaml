@@ -1,0 +1,5 @@
+default:
+    options: 
+        mangle: true
+    files: 
+        dist/main/cp-model.min.js: [ 'dist/main/cp-model.js' ]

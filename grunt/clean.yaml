@@ -4,6 +4,11 @@ build:
 doc:
     src:
         - './doc/'
+
+maps:
+    src:
+        - './dist/**/*.map'
+
 basedir:
     src:
         - './src/**/.baseDir.ts'

@@ -7,8 +7,6 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "dist",
-        "sourceMap": true,
-        "sourceRoot": "../src",
         "rootDir": "src",
         "target": "es5"
     },

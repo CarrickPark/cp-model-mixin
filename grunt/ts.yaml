@@ -1,4 +1,7 @@
 build:
-    tsconfig: './tsconfig.json'
+    tsconfig: 
+        tsconfig: './tsconfig.json'
+        sourceMap: true
+        sourceRoot: '../src'
 test:
     tsconfig: './tsconfig.json'

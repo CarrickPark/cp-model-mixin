@@ -1,25 +1,26 @@
-default: []
+default: [ 'cover' ]
 
-build:
+pre_build:
     - 'clean:build'
     - 'tslint'
-    - 'ts:build'
+
+post_build:
     - 'clean:basedir'
 
-build_nosourcemaps:
-    - 'build'
-    - 'clean:maps'
+build:
+    - 'pre_build'
+    - 'ts:build'
+    - 'post_build'
     
+build_debug:
+    - 'pre_build'
+    - 'ts:build_debug'
+    - 'post_build'
+
 test:
-    - 'clean:test'
-    - 'tslint'
-    - 'ts:test'
-    - 'clean:basedir'
+    - 'build'
     - 'mochaTest'
 
 cover:
-    - 'clean:test'
-    - 'tslint'
-    - 'ts:test'
-    - 'clean:basedir'
+    - 'build'
     - 'mocha_istanbul'

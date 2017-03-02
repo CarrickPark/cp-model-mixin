@@ -1,12 +1,7 @@
 build:
     src:
         - './dist/'
-test:
-    src:
-        - './dist/'
-maps:
-    src:
-        - './dist/**/*.map'
+
 basedir:
     src:
         - './src/**/.baseDir.ts'

@@ -1,0 +1,1 @@
+"use strict";function CPModel(a,b){console.log("loaded CPModel"),a.createOptionsFromRemotingContext=function(a){return console.log(" ctx "+a.req.get("host")),{accessToken:a.req.accessToken,host:a.req.get("host")}}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=CPModel,exports.CPModel=CPModel;

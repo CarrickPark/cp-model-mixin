@@ -10,6 +10,7 @@ post_build:
 build:
     - 'pre_build'
     - 'ts:build'
+    - 'uglify'
     - 'post_build'
     
 build_debug:

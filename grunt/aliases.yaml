@@ -11,6 +11,7 @@ build:
     - 'pre_build'
     - 'ts:build'
     - 'uglify'
+    - 'copy'
     - 'post_build'
     
 build_debug:

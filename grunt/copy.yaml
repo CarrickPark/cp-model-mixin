@@ -1,0 +1,3 @@
+default:
+    src: 'dist/main/cp-model.min.js'
+    dest: 'dist/c_p_model.js'

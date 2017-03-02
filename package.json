@@ -7,7 +7,8 @@
     "build": "grunt build",
     "build_debug": "grunt build_debug",
     "test": "npm run build && nyc --reporter=html --reporter=text mocha dist/test/**/*.js",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "doc": "npm run build && grunt clean:doc && ./node_modules/.bin/typedoc --out doc ./src/main"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-default: [ 'cover' ]
+default: [ ]
 
 pre_build:
     - 'clean:build'

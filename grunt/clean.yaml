@@ -1,7 +1,9 @@
 build:
     src:
         - './dist/'
-
+doc:
+    src:
+        - './doc/'
 basedir:
     src:
         - './src/**/.baseDir.ts'

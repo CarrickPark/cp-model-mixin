@@ -1,8 +1,12 @@
 build:
-    tsconfig: './tsconfig.json'
-
+    tsconfig: true
+    options:
+        verbose: true
+        sourceMap: false
+        
 build_debug:
-    tsconfig: 
-        tsconfig: './tsconfig.json'
+    tsconfig: true
+    options:
+        verbose: true
         sourceMap: true
         sourceRoot: '../src'

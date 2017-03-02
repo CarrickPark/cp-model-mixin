@@ -9,4 +9,3 @@ build_debug:
     options:
         verbose: true
         sourceMap: true
-        sourceRoot: '../src'

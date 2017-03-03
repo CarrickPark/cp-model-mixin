@@ -9,6 +9,9 @@ maps:
     src:
         - './dist/**/*.map'
 
+min:
+    src:
+        - './dist/main/**/*.min.js'
 basedir:
     src:
         - './src/**/.baseDir.ts'

@@ -9,7 +9,6 @@ const expect = chai.expect;
 chai.use(sinonChai);
 
 describe('Carrick Park model mixin', function () {
-
     it('Should contain host name on create', function () {
 
         const ctx = {
@@ -20,9 +19,7 @@ describe('Carrick Park model mixin', function () {
         };
 
         const Model: loopback.Model = {
-            createOptionsFromRemotingContext: function (ctxin: any) {
-                return ctxin;
-            }
+            createOptionsFromRemotingContext: null
         };
 
         ctx.req.get = sinon.stub().returns('testhost');

@@ -15,9 +15,7 @@ describe('Carrick Park model mixin', function () {
             }
         };
         var Model = {
-            createOptionsFromRemotingContext: function (ctxin) {
-                return ctxin;
-            }
+            createOptionsFromRemotingContext: null
         };
         ctx.req.get = sinon.stub().returns('testhost');
         CPModel(Model, {});

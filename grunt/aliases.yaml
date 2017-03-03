@@ -6,6 +6,7 @@ pre_build:
 
 post_build:
     - 'clean:basedir'
+    - 'clean:min'
 
 build:
     - 'pre_build'

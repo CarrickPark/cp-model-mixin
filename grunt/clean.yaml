@@ -1,6 +1,10 @@
 build:
     src:
         - './dist/'
+
+cover:
+    src:
+        - './coverage'
 doc:
     src:
         - './doc/'
@@ -12,6 +16,7 @@ maps:
 min:
     src:
         - './dist/main/**/*.min.js'
+
 basedir:
     src:
         - './src/**/.baseDir.ts'

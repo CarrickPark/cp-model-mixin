@@ -25,10 +25,28 @@ build_debug_js:
     - 'ts:build'
     - 'post_build'
 
-test:
-    - 'build'
+mocha:
+    - 'build_debug'
+    - 'mochaTest'
+
+test_js:
+    - 'build_debug_js'
     - 'mochaTest'
 
 cover:
+    - 'build_debug'
+    - 'clean:cover'
+    - 'shell:cover'
+
+cover_js:
+    - 'build_debug_js'
+    - 'clean:cover'
+    - 'shell:cover'
+
+coveralls:
+    - 'shell:coveralls'
+
+doc:
     - 'build'
-    - 'mocha_istanbul'
+    - 'clean:doc'
+    - 'shell:doc'

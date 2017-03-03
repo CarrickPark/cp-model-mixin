@@ -1,0 +1,11 @@
+options:
+        stderr: false
+
+cover:
+    command: 'nyc --reporter=html --reporter=text mocha dist/test/**/*.js'
+
+coveralls:
+    command: 'nyc report --reporter=text-lcov | coveralls'
+
+doc:
+    command: 'typedoc --out doc ./src/main'

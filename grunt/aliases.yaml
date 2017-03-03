@@ -29,7 +29,7 @@ mocha:
     - 'build_debug'
     - 'mochaTest'
 
-test_js:
+mocha_js:
     - 'build_debug_js'
     - 'mochaTest'
 

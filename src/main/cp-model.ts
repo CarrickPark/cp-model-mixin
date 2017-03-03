@@ -1,6 +1,7 @@
 /**
  * Add the host to remoting options
  */
+
 import * as loopback from 'loopback';
 
 /**

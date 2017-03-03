@@ -1,14 +1,11 @@
-'use strict';
-
 import * as chai from 'chai';
 import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
+import * as loopback from 'loopback';
+import CPModel = require('../main/cp-model');
 
 const expect = chai.expect;
 chai.use(sinonChai);
-
-import * as loopback from 'loopback';
-import CPModel = require('../main/cp-model');
 
 describe('Carrick Park model mixin', function () {
 

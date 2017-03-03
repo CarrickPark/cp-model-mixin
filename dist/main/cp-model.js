@@ -1,3 +1,6 @@
+/**
+ * Add the host to remoting options
+ */
 "use strict";
 module.exports = function CPModel(Model, options) {
     console.log('loaded CPModel');

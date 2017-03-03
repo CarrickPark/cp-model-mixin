@@ -12,8 +12,18 @@ describe('Carrick Park model mixin', function () {
 
     it('Should contain host name on create', function () {
 
-        const ctx = { req: { accessToken: 'testtoken', get: {} } };
-        const Model: loopback.Model = { createOptionsFromRemotingContext: function (ctxin: any) { return null; }};
+        const ctx = {
+            req: {
+                accessToken: 'testtoken',
+                get: {}
+            }
+        };
+
+        const Model: loopback.Model = {
+            createOptionsFromRemotingContext: function (ctxin: any) {
+                return ctxin;
+            }
+        };
 
         ctx.req.get = sinon.stub().returns('testhost');
 

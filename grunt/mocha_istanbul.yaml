@@ -1,2 +1,2 @@
 coverage: 
-    src: 'dist/test/'
+    src: 'dist/'

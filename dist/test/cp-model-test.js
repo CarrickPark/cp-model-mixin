@@ -8,8 +8,17 @@ var expect = chai.expect;
 chai.use(sinonChai);
 describe('Carrick Park model mixin', function () {
     it('Should contain host name on create', function () {
-        var ctx = { req: { accessToken: 'testtoken', get: {} } };
-        var Model = { createOptionsFromRemotingContext: function (ctxin) { return null; } };
+        var ctx = {
+            req: {
+                accessToken: 'testtoken',
+                get: {}
+            }
+        };
+        var Model = {
+            createOptionsFromRemotingContext: function (ctxin) {
+                return ctxin;
+            }
+        };
         ctx.req.get = sinon.stub().returns('testhost');
         CPModel(Model, {});
         var options = Model.createOptionsFromRemotingContext(ctx);

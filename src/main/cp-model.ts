@@ -10,13 +10,17 @@ import * as loopback from 'loopback';
  * @param Model - The model to add context.
  * @param options The model options.
  */
-export = function CPModel(Model: loopback.Model, options: any) {
+function CPModel(Model: loopback.Model, options: any) {
     console.log('loaded CPModel');
+
     Model.createOptionsFromRemotingContext = function(ctx) {
-      console.log(' ctx ' + ctx.req.get('host'));
-      return {
-        accessToken: ctx.req.accessToken,
-        host: ctx.req.get('host')
-      };
+        console.log('ctx - ' + ctx.req.get('host'));
+
+        return {
+            accessToken: ctx.req.accessToken,
+            host: ctx.req.get('host')
+        };
     };
 };
+
+export = CPModel;

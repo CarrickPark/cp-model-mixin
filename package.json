@@ -2,7 +2,7 @@
   "name": "cp-model-mixin",
   "version": "1.0.0",
   "description": "Carrick Park model mixin",
-  "main": "dist/c_p-model.js",
+  "main": "dist/c_p_model.js",
   "scripts": {
     "build": "grunt build",
     "build_debug": "grunt build_debug",
